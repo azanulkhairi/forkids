@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+    tools:context=".activity.HomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoMariBermainHome"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/maribermain"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/animalButton"
+        android:layout_below="@+id/logoMariBermainHome"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Animal"/>
+    <Button
+        android:id="@+id/fruitButton"
+        android:layout_below="@+id/animalButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Fruits"/>
+
+    <Button
+        android:id="@+id/musicButton"
+        android:layout_below="@+id/fruitButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Music"/>
+
+    <ToggleButton
+        android:layout_below="@+id/musicButton"
+        android:id="@+id/toggleSound"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/AppTheme.ToggleButton" />
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_below="@+id/toggleSound"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Quit"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/spanduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1752201162467987/8188032549" />
+    
+</RelativeLayout>
